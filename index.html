@@ -250,6 +250,25 @@
               >
             </div>
           </div>
+
+     <div class="projects__row">
+  <div class="projects__row-img-cont">
+    <div id="slideshow" class="projects__row-img-slide">
+      <img src="./assets/img/weddinggall.PNG" alt="wedding gallery image" loading="lazy" />
+      <img src="./assets/img/weddinggallery3.PNG" alt="wedding gallery image" loading="lazy" />
+      <img src="./assets/img/weddinggallery4.PNG" alt="wedding gallery image" loading="lazy" />
+    </div>
+  </div>
+  <div class="projects__row-content">
+    <h3 class="projects__row-content-title">Wedding gallery</h3>
+    <p class="projects__row-content-desc">
+      A responsive multi-page website featuring a curated wedding gallery and developer information. Optimized for seamless functionality across devices.
+    </p>
+    <a href="https://responsiveshecodeswebsite.netlify.app/" target="_blank" class="btn btn--med btn--theme dynamicBgClr">Learn more</a>
+  </div>
+</div>
+
+
         </div>
       </div>
     </section>
@@ -349,5 +368,29 @@
     </footer>
 
     <script src="./index.js"></script>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementById("slideshow").getElementsByTagName("img");
+
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        slideIndex++;
+
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+
+        setTimeout(showSlides, 4000); 
+      }
+</script>
+
   </body>
 </html>
