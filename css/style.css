@@ -402,6 +402,15 @@ textarea {
   max-width: 100%;
   height: auto;
 }
+
+.projects__row-img1{
+  max-width: 100%;
+  height: auto;
+  border: 2px solid rgb(225, 246, 235);
+}
+
+
+
 .projects__row-content {
   padding: 2rem 0;
   display: flex;
